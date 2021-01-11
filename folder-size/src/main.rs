@@ -3,7 +3,11 @@ use {
         crate_authors, crate_name, crate_version, Arg
     },
     log::{info, trace},
-    prometheus_exporter_base::prelude::*,
+    env_logger,
+    prometheus_exporter_base::{
+        prelude::*,
+        render_prometheus,
+    },
     std::env,
     std::fs::read_dir,
 };
