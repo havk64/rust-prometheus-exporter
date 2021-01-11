@@ -1,0 +1,13 @@
+[package]
+name = "folder-size"
+version = "0.1.0"
+authors = ["Alexandro DE OLIVEIRA <adeoliveira@vente-privee.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prometheus_exporter_base = { version = "1.1.0", features = ["hyper_server"] }
+tokio = { version = "0.2.24", features = ["full"] }
+clap = "2.33.3"
+log = "0.4.13"
