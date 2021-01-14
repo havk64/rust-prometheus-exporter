@@ -1,13 +1,8 @@
 use {
-    clap::{
-        crate_authors, crate_name, crate_version, Arg
-    },
-    log::{info, trace},
+    clap::{crate_authors, crate_name, crate_version, Arg},
     env_logger,
-    prometheus_exporter_base::{
-        prelude::*,
-        render_prometheus,
-    },
+    log::{info, trace},
+    prometheus_exporter_base::{prelude::*, render_prometheus},
     std::env,
     std::fs::read_dir,
 };
