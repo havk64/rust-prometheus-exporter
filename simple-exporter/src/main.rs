@@ -1,8 +1,5 @@
 use {
-    prometheus_exporter_base::{
-        prelude::*,
-        render_prometheus,
-    },
+    prometheus_exporter_base::{prelude::*, render_prometheus},
     std::fs::read_dir,
 };
 
